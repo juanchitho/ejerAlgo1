@@ -39,4 +39,68 @@ def maximo_comun_divisor():
         menor = resto
         resto = mayor % menor
     print (menor)
-maximo_comun_divisor()    
+#maximo_comun_divisor()    
+
+
+#parte practica
+"""Calcular el factorial de un numero ingresado por el usuario e indicarle el resultado."""
+
+def factorial():
+    num=int(input("ingrese un numero: "))
+    res=1
+    for i in range(1,num+1):
+        res= res*i
+        print("el resultado es",res)
+#factorial()
+
+"""Dada una serie de números ingresados de a uno.
+# Indicar promedio de la serie.
+# El ingreso de números finaliza cuando el usuario ingresa 0"""
+
+def promedio_de_sumatoria():
+    suma=0
+    contador=0
+    #continuar=True
+    num=int(input("ingrese un numero (0 para finalizar) "))
+    while num != 0:
+        suma+=num
+        contador+=1
+        num=int(input("ingrese otro numero (0 para finalizar) "))
+    
+    if (contador>0):
+        print("la sumatoria total es ",suma)
+        print("la cantidad de numeros ingresador es ", contador)
+        print("el promedio es: ",suma/contador)
+    else:
+        print("no ingreso numeros para promediar")    
+
+#promedio_de_sumatoria()
+
+"""Se tiene una lista de casos confirmados de coronavirus por cada país se pide:
+Indicar cual es el promedio mundial
+Cantidad de Casos mundiales
+Que cantidad de casos tiene el país con menos casos
+Que cantidad de casos tiene el país con más casos"""
+
+def promedio_mundial_covid():
+    cantidadCasos=int(input("ingrese cantidad de casos confirmados (numero negativo para finalizar) "))
+    sumaTotal=0
+    mayorPais=cantidadCasos
+    menorPais=cantidadCasos
+    contador=0
+    while (cantidadCasos > -1):
+        contador+=1
+        sumaTotal+=cantidadCasos
+        if cantidadCasos > mayorPais:
+            mayorPais=cantidadCasos
+        elif cantidadCasos < menorPais:
+            menorPais=cantidadCasos
+        cantidadCasos=int(input("ingrese otro pais con casos confirmados (numero negativo para finalizar) "))
+    if contador == 0:
+        print("no se ingreso ningun pais")
+    else:
+        print("el promedio mundial de casos es ",sumaTotal/contador )
+        print("la cantidad total de casos mundiales es de ", sumaTotal)
+        print("la menor cantidad de casos es ",menorPais)
+        print("la mayor cantidad de casos es ",mayorPais)
+#promedio_mundial_covid()
