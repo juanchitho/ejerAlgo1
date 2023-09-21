@@ -1,0 +1,29 @@
+==1572990== Memcheck, a memory error detector
+==1572990== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==1572990== Using Valgrind-3.21.0-d97fed7c3e-20230428 and LibVEX; rerun with -h for copyright info
+==1572990== Command: ./vocales_consonantes.out
+==1572990== Parent PID: 24000
+==1572990== 
+--1572990-- 
+--1572990-- Valgrind options:
+--1572990--    --leak-check=full
+--1572990--    --show-leak-kinds=all
+--1572990--    --track-origins=yes
+--1572990--    --verbose
+--1572990--    --log-file=valgrind-out.txt
+--1572990-- Contents of /proc/version:
+--1572990--   Linux version 6.5.3-arch1-1 (linux@archlinux) (gcc (GCC) 13.2.1 20230801, GNU ld (GNU Binutils) 2.41.0) #1 SMP PREEMPT_DYNAMIC Wed, 13 Sep 2023 08:37:40 +0000
+--1572990-- 
+--1572990-- Arch and hwcaps: AMD64, LittleEndian, amd64-cx16-lzcnt-rdtscp-sse3-ssse3-avx-avx2-bmi-f16c-rdrand-rdseed
+--1572990-- Page sizes: currently 4096, max supported 4096
+--1572990-- Valgrind library directory: /usr/lib/valgrind
+--1572990-- Reading syms from /home/juanrunzio/Downloads/ejerAlgo1/algoAzc1/vocales_consonantes.out
+==1572990== Downloading debug info for /home/juanrunzio/Downloads/ejerAlgo1/algoAzc1/vocales_consonantes.out...
+==1572990== Server query failed: No such file or directory
+--1572990-- Reading syms from /usr/lib/ld-linux-x86-64.so.2
+==1572990== Downloading debug info for /usr/lib/ld-linux-x86-64.so.2...
+--1572990--   Considering /home/juanrunzio/.cache/debuginfod_client/5bda152cf75d0de2f24431a9ab38ef1a99cbedf9/debuginfo ..
+--1572990--   .. CRC is valid
+==1572990== Successfully downloaded debug file for /usr/lib/ld-linux-x86-64.so.2
+--1572990-- Reading syms from /usr/lib/valgrind/memcheck-amd64-linux
+==1572990== Downloading debug info for /usr/lib/valgrind/memcheck-amd64-linux...

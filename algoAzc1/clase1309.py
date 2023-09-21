@@ -80,7 +80,6 @@ def juego_parque_diversiones():
 
 def juego_parque_diversiones2():
     pesoTotal=0
-    
     contador=0
     continuar=True
 
@@ -113,4 +112,24 @@ def juego_parque_diversiones2():
     print("el juego puede comenzar con los participantes ya aceptados")
     print("el peso total de los participantes es de ",pesoTotal)
     print("la cantidad de participantes es de ",contador)
-juego_parque_diversiones2()
+#juego_parque_diversiones2()
+
+""" 
+def juego_parque_diversiones_profe():
+    MAX_ALTURA=1.90
+    MIN_ALTURA=1.60
+    MAX_PESO = 1500
+    MAX_PERSONAS = 20
+
+
+    altura = float(input('ingrese altura (en mts): '))
+
+    if altura < MIN_ALTURA or altura > MAX_ALTURA:
+        mostrar fuera de rango
+    elif(peso_acumulado + peso_participante > MAX_PESO):
+         mostrar peso excedido
+    else:
+         ingresa participante 
+
+          
+ """
