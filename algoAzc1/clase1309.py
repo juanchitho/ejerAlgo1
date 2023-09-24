@@ -131,5 +131,47 @@ def juego_parque_diversiones_profe():
     else:
          ingresa participante 
 
-          
- """
+"""
+
+def juego_parque_diversiones_3():
+    ALTURA_MINIMA = 160
+    ALTURA_MAXIMA = 190
+    PESO_MAXIMO_TOTAL = 1500 
+    CAPACIDAD_MAXIMA = 20
+
+    participantes_aceptados = 0
+    peso_total = 0
+    finalizado = False
+
+    while participantes_aceptados < CAPACIDAD_MAXIMA and not finalizado:
+
+        peso = int(input("Ingrese el peso del participante (kg): "))
+
+        if peso == 0:
+            finalizado = True
+        else: 
+            if peso_total + peso > PESO_MAXIMO_TOTAL:
+                    print("Peso total excedido, el participante no puede subir")
+                    finalizado = True
+            else:
+                altura = int(input("Ingrese la altura del participante (cm): "))
+
+
+                if altura < ALTURA_MINIMA or altura > ALTURA_MAXIMA:
+                    print("Altura del participante fuera de rango permitido")
+                else:
+                    participantes_aceptados += 1
+                    peso_total += peso
+
+
+    if participantes_aceptados == CAPACIDAD_MAXIMA:
+        print("Cantidad máxima de participantes alcanzada")
+        print("El juego puede comenzar con los participantes aceptados.")
+
+    if (finalizado and participantes_aceptados > 0):
+        print("El juego puede comenzar con los participantes aceptados.")
+    else:
+        if finalizado and participantes_aceptados <= 0:
+            print("No se ingresaron participantes validos, el juego no inicia")
+
+juego_parque_diversiones_3()
