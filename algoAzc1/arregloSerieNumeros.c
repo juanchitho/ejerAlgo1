@@ -18,7 +18,8 @@ void ingreso_numero(tm_vector VECserie){
 		}
 		printf("ingrese el siguiente numero (negativo para finalizar): \n");
 		scanf("%d", &numero);
-	} 
+	}
+	printf("aca esta el VECserie[]: %d \n",VECserie);
 }
 void mostrar_repeticiones(tm_vector VECserie){
 	printf("Las repeticiones son: \n");
