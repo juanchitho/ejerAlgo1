@@ -53,6 +53,7 @@ void acumulacion_de_lluvia(TvecFilas milimetrosLluvia, int *vec_resultado){
 	promedio=acum/cantfilas;
 	printf("El promedio es de %d ml. \n",promedio);
 	
+	//imprimo en pantalla los dias que superan el promedio mensual
     	for (dias=0;dias<cantfilas;dias++){
 		
 		if(vec_resultado[dias] > promedio){
