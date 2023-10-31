@@ -29,7 +29,7 @@ typedef int Tvector[MAX];
 void verifica_ordenado(Tvector vector,int maxLogico,bool *ordenado, int *menor_diferencia){
 	int i;
 	*ordenado = true;
-	*menor_diferencia = vector[maxLogico-1]-vector[0];  //inicia en 70
+	*menor_diferencia = vector[maxLogico-1]-vector[0];  //inicia en 70 " This is done to ensure that menor_diferencia has a valid value before the for loop on lines 33-42 starts."
 
 	for (i=0;i<maxLogico-1;i++){
 		int diferencia = vector[i+1]-vector[i];
