@@ -37,8 +37,7 @@ typedef TvecCols TvecFilas[cantfilas];
 
 void acumulacion_de_lluvia(TvecFilas milimetrosLluvia, int *vec_resultado){
 	int dias , horas;
-	int acum = 0; 
-	int promedio = 0;
+	int acum = 0 , promedio = 0;
 	for (dias=0;dias<cantfilas;dias++){
 		vec_resultado[dias]=0;
 
