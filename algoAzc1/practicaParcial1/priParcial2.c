@@ -25,9 +25,9 @@ int intercalaVector(Tvector vector, int numero, int *ml){
         devolver = 0;
     }else{
         while(i >= 0 && vector[i] > numero){
-            //mueve los numeros 1 posicion, hasta que llega a la posicion correcta en la que iria el numero
-            vector[i + 1]= vector[i];
-            i--;
+            //mueve todos los numeros del vector 1 posicion y esto corta cuando el numero del vector NO sea mas grande que el numero entero ingresado
+            vector[i + 1]= vector[i];//aca los va desplazando
+            i--;//mueve el indice y como va de atras a adelante se resta
         }
         //cuando rompe
         vector[i + 1]= numero; //agrega a este numero
