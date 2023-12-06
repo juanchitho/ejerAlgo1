@@ -2,31 +2,16 @@
 #define CANT 4
 typedef int Tmatriz[CANT][CANT];
 
-// void ele_triangulo_superior(int numero, int *sumatoria, Tmatriz matriz){
-//     int i,j;
-//     *sumatoria = 0;
-//     int contador = 0;
-//     for (i=0 ; i<CANT-1 ; i++){
-//         printf("\n");
-//         for (j=CANT-1 ; j>i; j--){   //j=i diagonal primaria ,j>i diagonal superior , j<i diagonal inferior
-//             printf("\nj vale %d \n", j);
-//             printf("%d  ",matriz[i][j]);
-//             if (matriz[i][j]%numero == 0){
-//                 (*sumatoria) += matriz[i][j];
-//                 contador++;
-//             }
-//         }
-//     }
-//     printf("\n cantidad de numero divisibles(solo para testear) %d \n" , contador);    
 
-// }
+//va de arriba abajo en las filas , pero con las columnas de izquierda a derecha  <--
+
 void ele_triangulo_superior(int numero, int *sumatoria, Tmatriz matriz){
     int i,j;
     *sumatoria = 0;
     int contador = 0;
     for (i=0 ; i<CANT-1 ; i++){
         printf("\n");
-        for (j=CANT-1 ; j>i; j--){
+        for (j=CANT-1 ; j>i; j--){   //j=i diagonal primaria ,j>i diagonal superior , j<i diagonal inferior
             printf("\nj vale %d \n", j);
             printf("%d  ",matriz[i][j]);
             if (matriz[i][j]%numero == 0){
@@ -38,6 +23,27 @@ void ele_triangulo_superior(int numero, int *sumatoria, Tmatriz matriz){
     printf("\n cantidad de numero divisibles(solo para testear) %d \n" , contador);    
 
 }
+//otra forma de hacerlo es asi
+//que iria de arriba abajo en las filas , pero con las columnas de derecha izquierda  -->
+
+// void ele_triangulo_superior(int numero, int *sumatoria, Tmatriz matriz){
+//     int i,j;
+//     *sumatoria = 0;
+//     int contador = 0;
+//     for (i=0 ; i<CANT-1 ; i++){
+//         printf("\n");
+//         for (j=1+i ; j<=CANT-1; j++){
+//             printf("\nj vale %d \n", j);
+//             printf("%d  ",matriz[i][j]);
+//             if (matriz[i][j]%numero == 0){
+//                 (*sumatoria) += matriz[i][j];
+//                 contador++;
+//             }
+//         }
+//     }
+//     printf("\n cantidad de numero divisibles(solo para testear) %d \n" , contador);    
+
+// }
 
 int main()
 {
