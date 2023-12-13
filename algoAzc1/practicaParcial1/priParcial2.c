@@ -56,3 +56,31 @@ int main()
     }
     return 0;
 }
+
+
+/*
+int intercalarEnVector(Tvector vector, int *maximoLogico, int numero)
+{
+    int resultado = 1;
+
+    if (*maximoLogico >= MAX)
+    {
+        resultado = 0;
+    }
+    else
+    {
+        int i = *maximoLogico;
+
+        while (i > 0 && vector[i - 1] > numero)
+        {
+            vector[i] = vector[i - 1];
+            i--;
+        }
+
+        vector[i] = numero;
+        (*maximoLogico)++;
+    }
+
+    return resultado;
+}
+*/
