@@ -11,13 +11,13 @@ typedef int tamanio_vector_nros[MF];
 
 void mostrar_datos(tamanio_vector_nros v, int ultima_pos){
 	int i;
-	for (i=ultima_pos; i>=0; i--)
+	for (i=ultima_pos - 1; i>=0; i--)
 		printf("%i \n", v[i]);
 }
 
-void main(){
+int main(){
 	tamanio_vector_nros padron = {1,1,0,1,6,4};
-	mostrar_datos(padron , MF - 1);
+	mostrar_datos(padron , MF);
 
-	return;
+	return 0;
 }
