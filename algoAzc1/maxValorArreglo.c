@@ -27,14 +27,14 @@ int maximo_valor_arreglo(max_valor_arreglo v, int ultima_pos){
     return max;
 }
 
-void main (){
+int main (){
     max_valor_arreglo vec_1 = {8, -4, 7, 8, 0};
     max_valor_arreglo vec_2 = { -4, -7, -10};
     max_valor_arreglo vec_3 = { 425, -70, 500, 2, 43, 12, -1};
     printf("El maximo valor del arreglo vec_1 es: %i \n", maximo_valor_arreglo(vec_1, 4));
     printf("El maximo valor del arreglo vec_2 es: %i \n", maximo_valor_arreglo(vec_2, 2));
     printf("El maximo valor del arreglo vec_3 es: %i \n", maximo_valor_arreglo(vec_3, 6));
-    return;
+    return 0;
 }
 
 

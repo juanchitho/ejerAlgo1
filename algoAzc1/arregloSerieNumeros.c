@@ -8,14 +8,13 @@ typedef int tm_vector[MF];
 
 void ingreso_numero(tm_vector VECserie){
 	int numero;
-	int ml = 0;
 	printf("ingrese una serie de numeros entre 0 y 99, y -1 para salir: \n");
 	scanf("%d",&numero);
 	while (numero >= 0){
-		if (numero >= 0 && numero <= MF){
+		if (numero >= 0 && numero < MF){
 			VECserie[numero]++;
-			printf("aca esta el VEC[]: %d  \n",VECserie[numero]);
-			ml++;
+			printf("aca esta las repeticiones del numero ingresado: %d  \n",VECserie[numero]);//ver lo que se cargo
+			//es importante entender que en este caso el MF=ml
 		}else{
 			printf("el numero %d se encuentra fuera de rango (rango 0-99) \n ",numero);
 		}
@@ -36,6 +35,8 @@ void mostrar_repeticiones(tm_vector VECserie){
 int main(){
 	
 	tm_vector VECserie = {0};
+
+	//para entender el vector , como lo creamos ,y despues ver como queda con las repeticiones
 	printf("vector inicial: \n");
 	int cantidadDeNumeros = 0;
 	for(int i=0; i < MF; i++){
@@ -47,6 +48,8 @@ int main(){
 	ingreso_numero(VECserie);
 
 	mostrar_repeticiones(VECserie);
+
+	//entender las modificaciones que le hicimos ese vector
 	printf("el vector final es :\n");
 	for(int i=0; i < MF; i++){
 		printf(" %d - ",VECserie[i]);
