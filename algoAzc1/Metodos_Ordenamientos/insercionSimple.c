@@ -26,7 +26,7 @@ void ordenar(tvector vector, int n)
         vector[i+1] = vector[i];      // desplazo vector[i]
          i=i-1;                       // desplazo indice
       }
-      vector[i+1] = aux;  //coloco aux en su lugar
+      vector[i+1] = aux;  //coloco aux en su lugar , primera pasada seria [-1 + 1]
    }
 }
 

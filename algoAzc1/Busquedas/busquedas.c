@@ -13,7 +13,7 @@ int BusqSec(tvector valores, int tamanio, int buscado)
   bool encontrado=false;
  
   // mientras no se encontro y restan elementos por comparar
-  while (!encontrado && i<tamanio) {
+  while (!encontrado && i<tamanio) { //! (not) ==> mientas esto (encontrado) no sea true y...
     if (valores[i] == buscado)
     {
         encontrado=true;
@@ -36,7 +36,7 @@ int BusqBinaria(tvector valores, int tamanio, int buscado)
   sup=tamanio-1;
   terminado=false;
 
-  while (!terminado)
+  while (!terminado) //while(terminado == false)
   {
       if ((buscado > valores[sup]) || (buscado < valores[inf]))
       {
