@@ -76,16 +76,16 @@ int main()
   int dato, n=MF;
   int pos;
 
-  printf("Ingrese dato a buscar:");
+  printf("\n Ingrese dato a buscar:(130)\n");
   scanf("%d", &dato);
 
   /* BUSQUEDA SECUENCIAL */
   pos = BusqSec(vector, n, dato);
-  mostrar_resultado("SECUENCIAL", dato, pos);
+  mostrar_resultado("\nSECUENCIAL", dato, pos);
 
   /* BUSQUEDA BINARIA */
   pos = BusqBinaria(vector, n, dato);
-  mostrar_resultado("BINARIA", dato, pos);
+  mostrar_resultado("\nBINARIA", dato, pos);
 
   system("PAUSE");
   return 0;
