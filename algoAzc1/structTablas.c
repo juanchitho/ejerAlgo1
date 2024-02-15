@@ -28,6 +28,7 @@ int main (){
 
     printf("Ingrese el padron : \n");
     scanf("%d",&Alumnos[1].padron);
+    fflush(stdin);
 
     printf("Ingrese el email: \n");
     fgets(Alumnos[1].email,50,stdin);
@@ -50,14 +51,15 @@ int main (){
     printf("\n nota Parcial 2: %d", Alumnos[0].notas[1]);
     printf("\n el promedio es: %.2f", Alumnos[0].promedio);
 
+    printf("\n \n");
     //Muestro datos del segundo elemento de la tabla
-    printf("\n Alumno[0]");
+    printf("\n Alumno[1]");
     printf("\n nombre: %s", Alumnos[1].nombre);
     printf("\n padron: %d", Alumnos[1].padron);
     printf("\n email: %s", Alumnos[1].email);
     printf("\n nota Parcial 1: %d", Alumnos[1].notas[0]);
     printf("\n nota Parcial 2: %d", Alumnos[1].notas[1]);
-    printf("\n el promedio es: %.2f", Alumnos[1].promedio);
+    printf("\n el promedio es: %.2f \n", Alumnos[1].promedio);
 
     return 0;
 }
