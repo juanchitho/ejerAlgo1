@@ -1,0 +1,14 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/juanrunzio/Downloads/ejerAlgo1/algoAzc1/output/structConBusqYOrd'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _cargar, symObjAddr: 0x0, symBinAddr: 0x1000033C8, symSize: 0x1B0 }
+  - { offsetInCU: 0x48, offset: 0x48, size: 0x8, addend: 0x0, symName: _cargar, symObjAddr: 0x0, symBinAddr: 0x1000033C8, symSize: 0x1B0 }
+  - { offsetInCU: 0x7A, offset: 0x7A, size: 0x8, addend: 0x0, symName: _mostrar, symObjAddr: 0x1B0, symBinAddr: 0x100003578, symSize: 0x16C }
+  - { offsetInCU: 0xAC, offset: 0xAC, size: 0x8, addend: 0x0, symName: _alumno_mejor_promedio, symObjAddr: 0x31C, symBinAddr: 0x1000036E4, symSize: 0xB0 }
+  - { offsetInCU: 0xFE, offset: 0xFE, size: 0x8, addend: 0x0, symName: _promedio_general_parcial1, symObjAddr: 0x3CC, symBinAddr: 0x100003794, symSize: 0x80 }
+  - { offsetInCU: 0x150, offset: 0x150, size: 0x8, addend: 0x0, symName: _oredenamiento_ascendente_burbujeo, symObjAddr: 0x44C, symBinAddr: 0x100003814, symSize: 0x1AC }
+  - { offsetInCU: 0x1AC, offset: 0x1AC, size: 0x8, addend: 0x0, symName: _busqueda_binaria, symObjAddr: 0x5F8, symBinAddr: 0x1000039C0, symSize: 0x154 }
+  - { offsetInCU: 0x228, offset: 0x228, size: 0x8, addend: 0x0, symName: _mostrar_por_posicion, symObjAddr: 0x74C, symBinAddr: 0x100003B14, symSize: 0x140 }
+  - { offsetInCU: 0x25A, offset: 0x25A, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x88C, symBinAddr: 0x100003C54, symSize: 0x158 }
+...
