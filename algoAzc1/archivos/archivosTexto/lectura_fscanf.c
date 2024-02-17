@@ -16,7 +16,7 @@ int main()
     {
         char cadena[MAX];
 
-        fscanf(archivo, "%s", cadena);
+        fscanf(archivo, "%s", cadena);//toma palabra por palabra
         while (feof(archivo) == 0)
         {
             printf("%s\n", cadena);

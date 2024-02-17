@@ -7,6 +7,8 @@ typedef struct{
     char descripcion[30];
     float cantidad;
 }t_regProducto;
+
+
 void cargar_datos(FILE *arProductos){
     t_regProducto rProducto;
 

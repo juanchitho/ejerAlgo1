@@ -1,0 +1,8 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/juanrunzio/Downloads/ejerAlgo1/algoAzc1/archivos/output/mostrarArchivo'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _mostrar_datos, symObjAddr: 0x0, symBinAddr: 0x100003DB0, symSize: 0xDC }
+  - { offsetInCU: 0x42, offset: 0x42, size: 0x8, addend: 0x0, symName: _mostrar_datos, symObjAddr: 0x0, symBinAddr: 0x100003DB0, symSize: 0xDC }
+  - { offsetInCU: 0x74, offset: 0x74, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0xDC, symBinAddr: 0x100003E8C, symSize: 0x70 }
+...

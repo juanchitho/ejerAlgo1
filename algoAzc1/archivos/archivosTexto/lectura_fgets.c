@@ -18,7 +18,7 @@ int main()
 
         while (feof(archivo) == 0)
         {
-            fgets(caracteres, MAX, archivo);
+            fgets(caracteres, MAX, archivo);// bastante parecido al fgetc pero corta la oracion cuando llega a los 80 caracteres
             printf("%s\n", caracteres);
         }
 

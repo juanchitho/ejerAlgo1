@@ -1,0 +1,5 @@
+Historia del Lenguaje C.
+
+C es un lenguaje de programacion creado en 1972 por Dennis M. Ritchie.
+Fue creado en los laboratorios Bell como evolucion del anterior lenguaje B, a su vez basado en BCPL.
+Al igual que B, es un lenguaje orientado a la implementacion de Sistemas Operativos, concretamente Unix.
