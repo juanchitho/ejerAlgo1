@@ -1,0 +1,11 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/juanrunzio/Downloads/ejerAlgo1/algoAzc1/FINAL/output/ej_enclase'
+relocations:
+  - { offsetInCU: 0x26, offset: 0x26, size: 0x8, addend: 0x0, symName: _generarTabla, symObjAddr: 0x0, symBinAddr: 0x100003874, symSize: 0xFC }
+  - { offsetInCU: 0x42, offset: 0x42, size: 0x8, addend: 0x0, symName: _generarTabla, symObjAddr: 0x0, symBinAddr: 0x100003874, symSize: 0xFC }
+  - { offsetInCU: 0x9E, offset: 0x9E, size: 0x8, addend: 0x0, symName: _ordenDescendentePorCodigo, symObjAddr: 0xFC, symBinAddr: 0x100003970, symSize: 0x1BC }
+  - { offsetInCU: 0x108, offset: 0x108, size: 0x8, addend: 0x0, symName: _busquedaProducto, symObjAddr: 0x2B8, symBinAddr: 0x100003B2C, symSize: 0x13C }
+  - { offsetInCU: 0x192, offset: 0x192, size: 0x8, addend: 0x0, symName: _busquedaCodigo, symObjAddr: 0x3F4, symBinAddr: 0x100003C68, symSize: 0x11C }
+  - { offsetInCU: 0x1E0, offset: 0x1E0, size: 0x8, addend: 0x0, symName: _main, symObjAddr: 0x510, symBinAddr: 0x100003D84, symSize: 0xE8 }
+...
