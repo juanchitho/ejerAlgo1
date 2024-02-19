@@ -15,6 +15,7 @@ void mostrar(tvector vector, int n)
 void ordenar_burbujeo(tvector vector, int n)
 {
     int i = 0;
+    int temp;
     bool intercambio = true; // Variable para verificar si se realizan intercambios
 
     while (i < n - 1 && intercambio)
@@ -25,7 +26,7 @@ void ordenar_burbujeo(tvector vector, int n)
         {
             if (vector[j] > vector[j + 1])
             {
-                int temp = vector[j];
+                temp = vector[j];
                 vector[j] = vector[j + 1];
                 vector[j + 1] = temp;
                 intercambio = true; // Se realizó un intercambio en esta pasada

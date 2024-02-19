@@ -53,7 +53,7 @@ void odenamiento_descendente(TablaVec Tornillo, int ml){
                 aux = Tornillo[j];
                 Tornillo[j] = Tornillo[j+1];
                 Tornillo[j + 1] = aux;
-                intercambio = false;
+                intercambio = true;
             }
         }
         i++;
@@ -70,7 +70,7 @@ int busqueda_por_codigo(TablaVec Tornillos, int ml , int codigo){
 
     while (!terminado)
     {
-        if (codigo<Tornillos[sup].codigo || (codigo>Tornillos[inf].codigo))//si llega estar por fuera del arreglo 
+        if (codigo<Tornillos[sup].codigo || (codigo>Tornillos[inf].codigo))//si llega estar por fuera del arreglo, el arreglo esta ordenado descendente
         {
             terminado=true;
             posicion = -1;
