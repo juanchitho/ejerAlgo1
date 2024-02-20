@@ -121,11 +121,12 @@ int main(){
         printf("\n Error al abrir el archivo\n");
     }else{
         generar_tabla(archivo,Tornillos,&ml);
+        fclose(archivo);
         odenamiento_descendente(Tornillos,ml);
         pedido_de_codigo(Tornillos,ml);
         
     }
-    fclose(archivo);
+    
 
     return 0;
 }
