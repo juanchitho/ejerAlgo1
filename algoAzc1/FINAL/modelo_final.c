@@ -53,14 +53,14 @@ void odenamiento_descendente(TablaVec Tornillo, int ml){
                 aux = Tornillo[j];
                 Tornillo[j] = Tornillo[j+1];
                 Tornillo[j + 1] = aux;
-                intercambio = true;
+                intercambio = false;
             }
         }
         i++;
     }
 
 }
-//3)busqueda binaria por codigo
+//3)busqueda binaria por codigo en una tabla q esta descendente
 int busqueda_por_codigo(TablaVec Tornillos, int ml , int codigo){
     int inf,sup,mit,posicion;
     bool terminado;
@@ -70,7 +70,7 @@ int busqueda_por_codigo(TablaVec Tornillos, int ml , int codigo){
 
     while (!terminado)
     {
-        if (codigo<Tornillos[sup].codigo || (codigo>Tornillos[inf].codigo))//si llega estar por fuera del arreglo, el arreglo esta ordenado descendente
+        if (codigo<Tornillos[sup].codigo || (codigo>Tornillos[inf].codigo))//si llega estar por fuera del arreglo 
         {
             terminado=true;
             posicion = -1;
@@ -121,12 +121,11 @@ int main(){
         printf("\n Error al abrir el archivo\n");
     }else{
         generar_tabla(archivo,Tornillos,&ml);
-        fclose(archivo);
         odenamiento_descendente(Tornillos,ml);
         pedido_de_codigo(Tornillos,ml);
         
     }
-    
+    fclose(archivo);
 
     return 0;
 }
